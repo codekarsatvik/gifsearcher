@@ -19,7 +19,7 @@ $('input').keypress(function(event){
 
 /* 2. do the data stuff with the API */
 function getInput(input){
-var url = "http://api.giphy.com/v1/gifs/search?q=\""+ input + "\"&api_key=mJbWiomXlwq7LHmQiwCc15uKeckMLWso";
+var url = "https://api.giphy.com/v1/gifs/search?q=\""+ input + "\"&api_key=mJbWiomXlwq7LHmQiwCc15uKeckMLWso";
 
 // AJAX Request
 var GiphyAJAXCall = new XMLHttpRequest();
