@@ -1,5 +1,10 @@
 /* 1. Grab the input value */
+function inputFun(x){
 
+
+  x.value = null;
+  x.style.background = "#eeeeee";
+}
 $("button").click(function(){var input = document.querySelector("input").value;
 console.log(input)
 getInput(input);
@@ -56,10 +61,12 @@ function pushToDom(input){
     console.log(src);
     var url = gif.data[0].images.fixed_height.url;
 
-  document.querySelector(".js-container").innerHTML = document.querySelector(".js-container").innerHTML + "<img src=\"" +src+  "\" class='container-image' >"
+  document.querySelector(".js-container").innerHTML = document.querySelector(".js-container").innerHTML + "<img src=\"" +src+  "\" class='container-image' ><br>"
 
   });
 
 
 
 }
+
+// creating functiom
